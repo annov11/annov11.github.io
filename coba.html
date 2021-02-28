@@ -1,0 +1,26 @@
+
+<html>
+<SCRIPT LANGUAGE="JavaScript">
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="sosa" && password=="sosa") { alert("selamat anda berhasil "); }
+else 
+if (done==0) { alert("Invalid login!"); }
+}
+// End --<
+</SCRIPT>
+<BODY>
+<center>
+<form name=login>
+<table width=225 border=1 cellpadding=3>
+<tr> <td colspan=2><center><font size="+2"><b>Members-Only Area!</b></font></center> </td></tr>
+<tr><td>Username:</td><td><input type=text name=username></td></tr>
+<tr><td>Password:</td><td><input type=text name=password></td></tr>
+<tr>><td colspan=2 align=center><input type=button value="Login!" onClick="Login()"></td></tr>
+</table>
+</body>
+</html>
